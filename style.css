@@ -1,0 +1,51 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: fit-content;
+    background: #2c3e50;
+    color: #75b6c7;
+    overflow-y: auto;
+  }
+  
+  .folder-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .folder-list li {
+    cursor: pointer;
+    padding: 0.5em;
+    margin: 0.2em 0;
+    background: #34495e;
+    border-radius: 5px;
+  }
+  
+  .folder-list li:hover {
+    background: #1abc9c;
+  }
+  
+  .folder-list .folder {
+    font-weight: bold;
+    margin-top: 1em;
+  }
+  
+  .content {
+    width:100vh;
+    margin:auto;
+  }
+  
+  iframe#viewer {
+    width: 100vh;
+    
+  }
+  
