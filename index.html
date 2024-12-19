@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="navbar" style="position: absolute;background: #7ba7d3; left:0;top:0; border-radius: 25px; padding: 2px;">
+            <ul class="folder-list">
+                <!-- File tree will be dynamically generated -->
+            </ul>
+            <button id="toggle" onclick="handletoggle()" style="background-color: #6588aa; padding: 4px; border-radius: 50%; border: none;">🫃</button>
+        </nav>
+        <button id="toggle" onclick="handletoggle()" style="background-color: #6588aa;">🫃</button>
+        <!-- Main Content Area -->
+        <p>Selected file will be displayed here.</p>
+        <main class="content">
+            <iframe id="viewer" data="" type="application/pdf" style="margin: auto; display: block;" width="1000"
+                height="800"></iframe>
+            <!-- </object> -->
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
